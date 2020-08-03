@@ -9,9 +9,9 @@ def solution(x):
     string_version = str(x)
 
     if string_version[0] == "-":
-        return "-" + string_version[:0:-1]
+        return int("-" + string_version[:0:-1])
     else:
-        return string_version[::-1]
+        return int(string_version[::-1])
 
 
 if __name__ == '__main__':
